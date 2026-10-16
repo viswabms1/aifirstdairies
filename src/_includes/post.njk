@@ -1,0 +1,27 @@
+---
+layout: base.njk
+---
+<article class="post">
+  <header class="post-header">
+    {% if tags %}
+      <p class="eyebrow">
+        {% for t in tags %}{% if t != "posts" %}<span class="tag">{{ t }}</span>{% endif %}{% endfor %}
+      </p>
+    {% endif %}
+    <h1>{{ title }}</h1>
+    {% if summary %}<p class="lede">{{ summary }}</p>{% endif %}
+    <div class="byline">
+      <span class="avatar" aria-hidden="true">{{ author | initials }}</span>
+      <span>
+        <strong>{{ author }}</strong><br>
+        <span class="muted">{{ date | readableDate }} · {{ content | readingTime }}</span>
+      </span>
+    </div>
+  </header>
+
+  <div class="prose">
+    {{ content | safe }}
+  </div>
+
+  <p class="back"><a href="/">← All posts</a></p>
+</article>

@@ -1,0 +1,31 @@
+# Config for Pages CMS (pagescms.org), a form-style editor for the posts.
+# NOTE: not tested yet. Check it against Pages CMS docs when you connect the repo.
+content:
+  - name: posts
+    label: Posts
+    type: collection
+    path: src/posts
+    filename: "{primary}.md"
+    view:
+      fields: [title, author, date]
+      primary: title
+    fields:
+      - name: title
+        label: Title
+        type: string
+      - name: date
+        label: Date
+        type: date
+      - name: author
+        label: Author
+        type: string
+      - name: summary
+        label: One-line summary
+        type: text
+      - name: tags
+        label: Tags
+        type: string
+        list: true
+      - name: body
+        label: Post
+        type: rich-text

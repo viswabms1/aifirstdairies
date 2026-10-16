@@ -1,0 +1,19 @@
+---
+layout: base.njk
+title: Archive
+permalink: /archive/
+---
+<section class="hero">
+  <p class="eyebrow">Archive</p>
+  <h1>Every post</h1>
+</section>
+
+<ul class="archive">
+  {% for post in collections.posts %}
+  <li>
+    <span class="muted date">{{ post.date | readableDate }}</span>
+    <a href="{{ post.url }}">{{ post.data.title }}</a>
+    <span class="muted">— {{ post.data.author }}</span>
+  </li>
+  {% endfor %}
+</ul>
