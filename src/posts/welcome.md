@@ -2,8 +2,9 @@
 title: Welcome to AI First Dairies
 date: 2026-10-16
 author: Viswanathan R
-tags: [announcement]
-summary: The team blog is open. Here is what to expect.
+summary: A team document journey
+tags:
+  - announcement
 ---
 Welcome to **AI First Dairies**, a blog written by our team.
 
