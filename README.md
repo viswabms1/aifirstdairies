@@ -35,7 +35,7 @@ Then open the address it prints (usually http://localhost:8080).
 2. In the repo, go to Settings → Pages, and set the source to **GitHub Actions**.
 3. Every push to `main` rebuilds and publishes the site.
 
-## Using the domain aifirstdairies.com
+## Using the domain aifirstdiaries.com
 
 1. In Settings → Pages, enter the custom domain.
 2. Add the DNS records GitHub shows in your domain registrar (Namecheap).
