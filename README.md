@@ -1,4 +1,4 @@
-# AI First Dairies — team blog
+# AI First Diaries — team blog
 
 A static blog built with [Eleventy](https://www.11ty.dev/) and hosted on GitHub Pages.
 
